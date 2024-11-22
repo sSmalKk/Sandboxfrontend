@@ -1,0 +1,30 @@
+Base_Modelos_File – Não tem referências externas.
+Base_Modelos_Model – Tem uma referência a Base_Modelos_File.
+Model_chemistry_Substances – Pode conter referências a Rules e Tags.
+Model_chemistry_compounds – Pode conter referências a Rules e Tags.
+Model_chemistry_element – Pode conter referências a Rules e Tags.
+Chat_group – Não tem referências externas.
+Chat_message – Tem uma referência a Chat_group.
+Modelos_Action – Pode conter referências a Rules, Tags, e chemsData.
+Modelos_Biomes – Pode conter referências a Rules, Tags, e chemsData.
+Base_Chunk – Tem referências a Universe_Settings, Modelos_Cube, e Modelos_Biomes.
+Base_Cube – Tem referências a Universe_Settings, Base_Chunk, e Universe_Interface.
+Modelos_Entity – Tem referências a Modelos_Size, Modelos_Item, e Universe_cube.
+Modelos_Part – Tem referências a Base_Modelos_File, Modelos_Chunk.
+Modelos_Receita – Tem referências a Modelos_Action, Rules, e Tags.
+Modelos_Size – Não tem referências externas.
+Modelos_Structure – Tem referências a Modelos_Size, Universe_Blockstate, e Tags.
+Modelos_Tag – Não tem referências externas.
+Modelos_TextureMap – Não tem referências externas.
+Modelos_interface – Pode conter referências a Rules, Tags, e chemsData.
+Modelos_item – Tem referências a Base_Modelos_Model, Modelos_TextureMap, e Modelos_interface.
+Universe_Age – Tem referências a Modelos_Structure.
+Universe_Blockstate – Não tem referências externas.
+Universe_Chunk – Tem referências a Universe_Settings, Universe_cube, e Modelos_Biomes.
+Universe_Entity – Tem referências a Universe_Settings, Universe_Chunk, e Modelos_Entity.
+Universe_Interface – Tem referências a Universe_cube, Modelos_interface, e Modelos_Item.
+Universe_Item – Tem referências a Universe_Slot e Universe_cube.
+Universe_Settings – Tem referências a Rules, Tags, Universe_Blockstate, Universe_Chunk, Modelos_Biomes, e Modelos_Size.
+user – Tem referências a user_section.
+user_character – Não tem referências externas.
+user_section – Tem referências a user.

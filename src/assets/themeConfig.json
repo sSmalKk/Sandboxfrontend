@@ -1,0 +1,12 @@
+{
+  "sidenavType": "transparent", 
+  "sidenavColor": "dark", 
+  "transparentSidenav": false, 
+  "whiteSidenav": false, 
+  "miniSidenav": false, 
+  "fixedNavbar": true, 
+  "transparentNavbar": true, 
+  "darkMode": true, 
+  "direction": "ltr", 
+  "openConfigurator": false 
+}

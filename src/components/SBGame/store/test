@@ -1,0 +1,2165 @@
+Base_Modelos_File
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "link": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "Type": {
+    "type": "Number"
+  }
+} 
+
+Base_Modelos_Model
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "type": {
+    "type": "Number"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "modelmap": {
+    "type": "JSON"
+  },
+  "file": {
+    "type": "String"
+  }
+} 
+
+Model_chemistry_Substances
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+} 
+
+Model_chemistry_compounds
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Model_chemistry_element
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Chat_group
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String",
+    "required": true
+  },
+  "code": {
+    "type": "String",
+    "required": true
+  },
+  "admin": {
+    "type": "String",
+    "required": true
+  },
+  "member": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  }
+}
+Chat_message
+{
+  "_id": {
+    "type": "String"
+  },
+  "message": {
+    "type": "String",
+    "required": true
+  },
+  "sender": {
+    "type": "String",
+    "required": true
+  },
+  "recipient": {
+    "type": "String",
+    "required": true
+  },
+  "groupId": {
+    "type": "ObjectId",
+    "ref": "Chat_group"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  }
+}
+Modelos_Action
+{
+  "_id": {
+    "type": "String"
+  },
+  "Name": {
+    "type": "String"
+  },
+  "Description": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "data": {
+    "type": "JSON"
+  },
+  "required": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Modelos_Age
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "relativeto": {
+    "type": "ObjectId",
+    "ref": "Modelos_Structure"
+  },
+  "year": {
+    "type": "Date"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "Events": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      },
+      "id": {
+        "type": "String"
+      },
+      "date": {
+        "type": "Date"
+      },
+      "name": {
+        "type": "String"
+      },
+      "data": {
+        "type": "Array"
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Modelos_Biomes
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "generation": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      },
+      "base": {
+        "type": "Array"
+      },
+      "terrain": {
+        "type": "Array"
+      },
+      "ores": {
+        "type": "Array"
+      },
+      "plant": {
+        "type": "Array"
+      }
+    }
+  ],
+  "structures": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "entites": {
+    "type": "String"
+  },
+  "size": {
+    "type": "Number"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Base_Chunk
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "x": {
+    "type": "Number"
+  },
+  "y": {
+    "type": "Number"
+  },
+  "z": {
+    "type": "Number"
+  },
+  "p": {
+    "type": "Number"
+  },
+  "settings": {
+    "ref": "Universe_Settings",
+    "type": "ObjectId"
+  },
+  "chunk": {
+    "type": "ObjectId",
+    "ref": "Modelos_Cube"
+  },
+  "generated": {
+    "type": "Boolean"
+  },
+  "chat": {
+    "ref": "Chat_group",
+    "type": "ObjectId"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "size": {
+    "ref": "Modelos_Size",
+    "type": "ObjectId"
+  },
+  "biome": {
+    "ref": "Modelos_Biomes",
+    "type": "ObjectId"
+  },
+  "op": {
+    "ref": "user",
+    "type": "ObjectId"
+  },
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Base_Cube
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "x": {
+    "type": "Number"
+  },
+  "y": {
+    "type": "Number"
+  },
+  "z": {
+    "type": "Number"
+  },
+  "p": {
+    "type": "Number"
+  },
+  "universe": {
+    "ref": "Universe_Settings",
+    "type": "ObjectId"
+  },
+  "chunk": {
+    "type": "ObjectId",
+    "ref": "Base_Chunk"
+  },
+  "interface": {
+    "type": "ObjectId",
+    "ref": "Universe_Interface"
+  },
+  "storage": {
+    "type": "ObjectId",
+    "ref": "Universe_Storage"
+  },
+  "data": {
+    "type": "String"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Modelos_Entity
+{
+  "_id": {
+    "type": "String"
+  },
+  "Name": {
+    "type": "String"
+  },
+  "Description": {
+    "type": "String"
+  },
+  "data": {
+    "type": "JSON"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "model": {
+    "ref": "Modelos_item",
+    "type": "ObjectId"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Size": {
+    "ref": "Modelos_Size",
+    "type": "ObjectId"
+  },
+  "Location": {
+    "ref": "Universe_cube",
+    "type": "ObjectId"
+  },
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Modelos_Part
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "tag": {
+    "type": "String"
+  },
+  "texture": {
+    "type": "ObjectId",
+    "ref": "Base_Modelos_File"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chunk": {
+    "ref": "Universe_Chunk",
+    "type": "ObjectId"
+  }
+}
+Modelos_Receita
+{
+  "_id": {
+    "type": "String"
+  },
+  "Name": {
+    "type": "String"
+  },
+  "Description": {
+    "type": "String"
+  },
+  "Item_start": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Item_end": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "action": {
+    "type": "ObjectId",
+    "ref": "Modelos_Action"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Modelos_Rule
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "descriotion": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Modelos_Size
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "realnumb": {
+    "type": "String"
+  },
+  "scale": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Modelos_Structure
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "x": {
+    "type": "Number"
+  },
+  "y": {
+    "type": "Number"
+  },
+  "z": {
+    "type": "Number"
+  },
+  "chunk": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "size": {
+    "ref": "Modelos_Size",
+    "type": "ObjectId"
+  },
+  "Blockstate": {
+    "ref": "Universe_Blockstate",
+    "type": "ObjectId"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Modelos_Tag
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "descriotion": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  }
+}
+Modelos_TextureMap
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "texturemap": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Modelos_interface
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "name": {
+    "type": "String"
+  },
+  "descrioption": {
+    "type": "String"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "storage": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Modelos_item
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "model": {
+    "ref": "Base_Modelos_Model",
+    "type": "ObjectId"
+  },
+  "texture": {
+    "type": "ObjectId",
+    "ref": "Modelos_TextureMap"
+  },
+  "interface": {
+    "ref": "Modelos_interface",
+    "type": "ObjectId"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "state": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Universe_Age
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "relativeto": {
+    "type": "ObjectId",
+    "ref": "Modelos_Structure"
+  },
+  "year": {
+    "type": "Date"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "Events": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      },
+      "id": {
+        "type": "String"
+      },
+      "date": {
+        "type": "Date"
+      },
+      "name": {
+        "type": "String"
+      },
+      "data": {
+        "type": "Array"
+      }
+    }
+  ],
+  "PlayerEvents": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Universe_Blockstate
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "normal": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      },
+      "name": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      },
+      "texture": {
+        "type": "String"
+      },
+      "model": {
+        "type": "String"
+      },
+      "textures": {
+        "type": "String"
+      },
+      "RigidBody": {
+        "type": "String"
+      },
+      "RigidBodyType": {
+        "type": "String"
+      },
+      "type": {
+        "type": "Number"
+      }
+    }
+  ]
+}
+Universe_Chunk
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "x": {
+    "type": "Number"
+  },
+  "y": {
+    "type": "Number"
+  },
+  "z": {
+    "type": "Number"
+  },
+  "p": {
+    "type": "Number"
+  },
+  "settings": {
+    "ref": "Universe_Settings",
+    "type": "ObjectId"
+  },
+  "chunk": {
+    "type": "ObjectId",
+    "ref": "Universe_cube"
+  },
+  "generated": {
+    "type": "Boolean"
+  },
+  "chat": {
+    "ref": "Chat_group",
+    "type": "ObjectId"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "size": {
+    "ref": "Modelos_Size",
+    "type": "ObjectId"
+  },
+  "biome": {
+    "ref": "Modelos_Biomes",
+    "type": "ObjectId"
+  },
+  "op": {
+    "ref": "user",
+    "type": "ObjectId"
+  },
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Universe_Entity
+{
+  "_id": {
+    "type": "String"
+  },
+  "Name": {
+    "type": "String"
+  },
+  "Description": {
+    "type": "String"
+  },
+  "Location": {
+    "type": "ObjectId",
+    "ref": "Universe_Chunk"
+  },
+  "X": {
+    "type": "String"
+  },
+  "Y": {
+    "type": "String"
+  },
+  "Z": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "Universe": {
+    "ref": "Universe_Settings",
+    "type": "ObjectId"
+  },
+  "Model": {
+    "ref": "Modelos_Entity",
+    "type": "ObjectId"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Universe_Interface
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "name": {
+    "type": "String"
+  },
+  "descrioption": {
+    "type": "String"
+  },
+  "data": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      },
+      "slot": {
+        "type": "String"
+      },
+      "item": {
+        "type": "String"
+      },
+      "action": {
+        "type": "String"
+      },
+      "data": {
+        "type": "Array"
+      }
+    }
+  ],
+  "storage": {
+    "type": "ObjectId",
+    "ref": "Modelos_interface"
+  },
+  "important": {
+    "type": "Number"
+  },
+  "Cube": {
+    "ref": "Universe_cube",
+    "type": "ObjectId"
+  },
+  "Item": {
+    "ref": "Modelos_item",
+    "type": "ObjectId"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ]
+}
+Universe_Item
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "x": {
+    "type": "String"
+  },
+  "y": {
+    "type": "String"
+  },
+  "z": {
+    "type": "String"
+  },
+  "data": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "slot": {
+    "ref": "Universe_Slot",
+    "type": "ObjectId"
+  },
+  "cube": {
+    "ref": "Universe_cube",
+    "type": "ObjectId"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Universe_Settings
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "items": {
+    "type": {
+      "type": "Array"
+    },
+    "items": {
+      "type": "String"
+    }
+  },
+  "biomes": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "models": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "textures": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "entity": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "ChatGlobal": {
+    "type": "String"
+  },
+  "ClanChat": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Blockstate": {
+    "ref": "Universe_Blockstate",
+    "type": "ObjectId"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "structures": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "ChunkLoaded": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Universe_Slot
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "x": {
+    "type": "String"
+  },
+  "y": {
+    "type": "String"
+  },
+  "z": {
+    "type": "String"
+  },
+  "data": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Universe_Storage
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "Slots": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Interface": {
+    "ref": "Universe_Interface",
+    "type": "ObjectId"
+  },
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Universe_Structure
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "x": {
+    "type": "Number"
+  },
+  "y": {
+    "type": "Number"
+  },
+  "z": {
+    "type": "Number"
+  },
+  "chunk": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "size": {
+    "ref": "Modelos_Size",
+    "type": "ObjectId"
+  },
+  "Blockstate": {
+    "ref": "Universe_Blockstate",
+    "type": "ObjectId"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+Universe_cube
+{
+  "_id": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "x": {
+    "type": "Number"
+  },
+  "y": {
+    "type": "Number"
+  },
+  "z": {
+    "type": "Number"
+  },
+  "p": {
+    "type": "Number"
+  },
+  "universe": {
+    "ref": "Universe_Settings",
+    "type": "ObjectId"
+  },
+  "chunk": {
+    "type": "ObjectId",
+    "ref": "Universe_Chunk"
+  },
+  "interface": {
+    "type": "ObjectId",
+    "ref": "Universe_Interface"
+  },
+  "storage": {
+    "type": "ObjectId",
+    "ref": "Universe_Storage"
+  },
+  "data": {
+    "type": "String"
+  },
+  "Rules": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "Tags": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "chemsData": {
+    "type": "JSON"
+  }
+}
+user
+{
+  "_id": {
+    "type": "String"
+  },
+  "username": {
+    "type": "String"
+  },
+  "password": {
+    "type": "String"
+  },
+  "email": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "FriendList": [
+    {
+      "_id": {
+        "default": false,
+        "type": "_id"
+      }
+    }
+  ],
+  "userType": {
+    "type": "Number"
+  },
+  "lastsection": {
+    "ref": "user_section",
+    "type": "ObjectId"
+  }
+}
+user_character
+{
+  "_id": {
+    "type": "String"
+  },
+  "name": {
+    "type": "String"
+  },
+  "description": {
+    "type": "String"
+  },
+  "data": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date"
+  },
+  "updatedAt": {
+    "type": "Date"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  }
+}
+user_section
+{
+  "_id": {
+    "type": "String"
+  },
+  "user": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "universe": {
+    "type": "String"
+  },
+  "location": {
+    "type": "String"
+  },
+  "isDeleted": {
+    "type": "Boolean"
+  },
+  "isActive": {
+    "type": "Boolean"
+  },
+  "createdAt": {
+    "type": "Date",
+    "default": "on create currentTime"
+  },
+  "updatedAt": {
+    "type": "Date",
+    "default": "on update currentTime"
+  },
+  "addedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "updatedBy": {
+    "type": "ObjectId",
+    "ref": "user"
+  },
+  "data": {
+    "type": "String"
+  }
+}
