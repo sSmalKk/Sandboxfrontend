@@ -8,24 +8,6 @@ function PeriodicTable() {
   const [elements, setElements] = useState([]);
   const [selectedElement, setSelectedElement] = useState(null);
 
-  // Fetch da API pública
-  useEffect(() => {
-    const fetchElements = async () => {
-      try {
-        const response = await fetch("https://neelpatel05.pythonanywhere.com/");
-        if (!response.ok) throw new Error("Erro ao buscar os dados da Tabela Periódica.");
-        const data = await response.json();
-        setElements(data);
-      } catch (error) {
-        console.error("Erro ao buscar os dados:", error);
-      }
-    };
-    fetchElements();
-  }, []);
-
-  const handleElementClick = (element) => {
-    setSelectedElement(element);
-  };
 
   const renderTable = () => {
     return (

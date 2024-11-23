@@ -84,7 +84,6 @@ const SensationMeterRoot = styled(Box)(({ theme }) => ({
   width: theme.spacing(12),
   height: theme.spacing(12),
   border: `2px solid ${theme.palette.divider}`,
-  borderRadius: "50%", // Transformar o SensationMeter em um círculo
   position: "relative",
   display: "flex",
   justifyContent: "center",
